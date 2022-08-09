@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>collection-FW1999</title>
+	<link rel="stylesheet" type="text/css" href="../assets/css/estilos.css" />
+</head>
+
+<body>
+	<header id="menucarousel">
+		<nav>
+		  <ul>
+			<li class="menuitem" ><a href="../index.html" title="Menu item #1">home</a></li>
+			<li class="menuitem"><a href="../index.html#about" title="Menu item #2">about</a></li>
+			<li class="menuitem"><a href="collections.html" title="Menu item #3">collections</a></li>
+			<li class="menuitem"><a href="gallery.html" title="Menu item #3">gallery</a></li>
+			<li class="menuitem"><a href="contact.html" title="Menu item #3">contact</a></li>
+		  </ul>
+		</nav>
+	</header>
+	<div class="scene">
+		<div class="carousel">
+		  <div class="carousel__cell"><img src="../assets/img/fw99img1.png"></div>
+		  <div class="carousel__cell"><img src="../assets/img/fw99img2.png"></div>
+		  <div class="carousel__cell"><img src="../assets/img/fw99img3.png"></div>
+		  <div class="carousel__cell"><img src="../assets/img/fw99img4.png"></div>
+		  <div class="carousel__cell"><img src="../assets/img/fw99img5.png"></div>
+		  <div class="carousel__cell"><img src="../assets/img/fw99img6.png"></div>
+		  <div class="carousel__cell"><img src="../assets/img/fw99img7.png"></div>
+		  <div class="carousel__cell"><img src="../assets/img/fw99img8.png"></div>
+		  <div class="carousel__cell"><img src="../assets/img/fw99img9.png"></div>
+		  <div class="carousel__cell"><img src="../assets/img/fw99img10.png"></div>
+		</div>
+	  </div>
+	  <p id="Collectiontitle">FW 1999 (Givenchy)</p>
+	  <p id="menucarousel">
+		<button class="previous-button"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M14.91 6.71c-.39-.39-1.02-.39-1.41 0L8.91 11.3c-.39.39-.39 1.02 0 1.41l4.59 4.59c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L11.03 12l3.88-3.88c.38-.39.38-1.03 0-1.41z"/></svg></button>
+		<button class="next-button"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M9.31 6.71c-.39.39-.39 1.02 0 1.41L13.19 12l-3.88 3.88c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0l4.59-4.59c.39-.39.39-1.02 0-1.41L10.72 6.7c-.38-.38-1.02-.38-1.41.01z"/></svg></button>
+	  </p>
+	  <script type="text/javascript">
+	var carousel = document.querySelector('.carousel');
+var cellCount = 9;
+var selectedIndex = 0;
+
+function rotateCarousel() {
+  var angle = selectedIndex / cellCount * -360;
+  carousel.style.transform = 'translateZ(-288px) rotateY(' + angle + 'deg)';
+}
+
+var prevButton = document.querySelector('.previous-button');
+prevButton.addEventListener( 'click', function() {
+  selectedIndex--;
+  rotateCarousel();
+});
+
+var nextButton = document.querySelector('.next-button');
+nextButton.addEventListener( 'click', function() {
+  selectedIndex++;
+  rotateCarousel();
+});</script>
+
+</body>
+
+</html>
