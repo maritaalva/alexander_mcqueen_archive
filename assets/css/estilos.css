@@ -25,6 +25,14 @@ html,body {
   font-style: normal;
   font-display: swap;
 }
+@font-face {
+  font-family: 'Diatype';
+  src: url('../fonts/ABCDiatype-Medium-Trial.woff2') format('woff2'),
+      url('../fonts/ABCDiatype-Medium-Trial.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
 
 /* Index-menu */
 .contenedor1{
@@ -37,7 +45,7 @@ scroll-snap-type: y mandatory;
 }
 
 header {
-  font-family: 'FivoMedium';
+  font-family: 'Diatype';
   display: flex;
   position: absolute;
   z-index: 1;
@@ -120,7 +128,7 @@ header {
   width:150px;
 }
 .avisoscroll {
-  font-family: 'FivoMedium';
+  font-family: 'Diatype';
   font-weight: normal;
   font-style: normal;
   position: absolute;
@@ -217,7 +225,7 @@ header {
 
 /* Index-About */
 .about{
-  font-family: 'FivoMedium';
+  font-family: 'Diatype';
   width: 100%;
   height: 4050px;
   margin-bottom: 50px;
@@ -460,7 +468,7 @@ section .about p img{
 }
 
 .textocorrido2 span {
-  font-family: 'FivoMedium';
+  font-family: 'Diatype';
 	font-style: italic;
 }
 
@@ -719,7 +727,7 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
             backdrop-filter: blur(5px);
     box-shadow: 4px 4px 60px rgba(0, 0, 0, 0.2);
     color: rgb(0, 0, 0);
-    font-family:"FivoMedium";
+    font-family:"Diatype";
     font-weight: 500;
     transition: all 0.2s ease-in-out;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
@@ -739,7 +747,7 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
     cursor: pointer;
   }
   form input::placeholder {
-    font-family: 'FivoMedium';
+    font-family: 'Diatype';
         font-weight: 400;
     color: rgba(0, 0, 0, 0.712);
     text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.808);
